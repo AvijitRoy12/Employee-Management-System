@@ -17,7 +17,12 @@ function Dashboard() {
     <div className="container">
       {!isAdding && !isEditing && (
         <>
-          
+          <Header
+            setIsAdding = {setIsAdding}
+          />
+          <List
+          employees = {setEmployees}
+          />
         </>
       )}
     </div>
@@ -25,3 +30,4 @@ function Dashboard() {
 }
 
 export default Dashboard;
+

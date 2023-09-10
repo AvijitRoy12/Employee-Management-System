@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
-function Header() {
-  return (
-    <div>Header</div>
-  )
+
+interface HeaderProps
+{
+    setIsAdding: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export default Header
+function Header({ setIsAdding }: HeaderProps) {
+  return <div>Header</div>;
+}
+
+export default Header;

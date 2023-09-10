@@ -1,6 +1,11 @@
 import React from 'react'
+import employeesData from '../../data';
 
-function List() {
+interface ListProps {
+  employees: React.Dispatch<React.SetStateAction<typeof employeesData>>;
+}
+
+function List({employees}: ListProps) {
   return (
     <div>List</div>
   )

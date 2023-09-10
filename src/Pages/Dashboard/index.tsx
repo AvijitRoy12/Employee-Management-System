@@ -13,7 +13,15 @@ function Dashboard() {
   const [selectedEmployee, setSelectedEmployee] = useState(null);
   const [isAdding, setIsAdding] = useState(false);
   const [isEditing, seIsEditing] = useState(false);
-  return <div>Dashboard</div>;
+  return (
+    <div className="container">
+      {!isAdding && !isEditing && (
+        <>
+          
+        </>
+      )}
+    </div>
+  );
 }
 
 export default Dashboard;

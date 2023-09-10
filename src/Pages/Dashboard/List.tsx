@@ -4,7 +4,7 @@ import employeesData from "../../data";
 /**
  * Alias for the type of function
  */
-type functionType = React.Dispatch<React.SetStateAction<boolean>>;
+type functionType = React.Dispatch<React.SetStateAction<Function>>;
 
 interface ListProps {
   employees: React.Dispatch<React.SetStateAction<typeof employeesData>>;

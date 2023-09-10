@@ -12,14 +12,14 @@ function Dashboard() {
   const [employees, setEmployees] = useState(employeesData);
   const [selectedEmployee, setSelectedEmployee] = useState(null);
   const [isAdding, setIsAdding] = useState(false);
-  const [isEditing, seIsEditing] = useState(false);
+  const [isEditing, setIsEditing] = useState(false);
 
   const handleEdit = () => {};
-
   const handleDelete = () => {};
 
   return (
     <div className="container">
+      {/** Employee list view */}
       {!isAdding && !isEditing && (
         <>
           <Header setIsAdding={setIsAdding} />
@@ -29,6 +29,14 @@ function Dashboard() {
             handleDelete={handleDelete}
           />
         </>
+      )}
+      {/** Employee Add view */}
+      {isAdding && (
+        <Add
+          employees={employees}
+          setEmployees={setEmployees}
+          setIsAdding={setIsAdding}
+        />
       )}
     </div>
   );

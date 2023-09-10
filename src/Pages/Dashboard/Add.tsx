@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import employeesData from "../../data";
 
-function Add() {
-  return (
-    <div>Add</div>
-  )
+type EmployeesData = typeof employeesData;
+
+interface addProps {
+  employees: EmployeesData;
+  setEmployees: React.Dispatch<React.SetStateAction<typeof employeesData>>;
+  setIsAdding: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export default Add
+function Add({ setEmployees, setIsAdding, employees }: addProps) {
+  return <div>Add</div>;
+}
+
+export default Add;

@@ -1,17 +1,19 @@
-import React from 'react'
-import Swal from 'sweetalert2'
+import React, { useState } from "react";
+import Swal from "sweetalert2";
 
-import employeesData from '../../data'
+import employeesData from "../../data";
 
-import Add from './Add'
-import List from './List'
-import Edit from './Edit'
-import Header from './Header'
+import Add from "./Add";
+import List from "./List";
+import Edit from "./Edit";
+import Header from "./Header";
 
 function Dashboard() {
-  return (
-    <div>Dashboard</div>
-  )
+  const [employees, setEmployees] = useState(employeesData);
+  const [selectedEmployee, setSelectedEmployee] = useState(null);
+  const [isAdding, setIsAdding] = useState(false);
+  const [isEditing, seIsEditing] = useState(false);
+  return <div>Dashboard</div>;
 }
 
-export default Dashboard
+export default Dashboard;

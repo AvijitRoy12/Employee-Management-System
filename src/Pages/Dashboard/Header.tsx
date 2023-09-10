@@ -1,9 +1,8 @@
 import React from "react";
 
-
-interface HeaderProps
-{
-    setIsAdding: React.Dispatch<React.SetStateAction<boolean>>;
+type functionType = React.Dispatch<React.SetStateAction<boolean>>;
+interface HeaderProps {
+  setIsAdding: functionType;
 }
 
 function Header({ setIsAdding }: HeaderProps) {

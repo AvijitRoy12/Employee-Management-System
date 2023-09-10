@@ -13,15 +13,20 @@ function Dashboard() {
   const [selectedEmployee, setSelectedEmployee] = useState(null);
   const [isAdding, setIsAdding] = useState(false);
   const [isEditing, seIsEditing] = useState(false);
+
+  const handleEdit = () => {};
+
+  const handleDelete = () => {};
+
   return (
     <div className="container">
       {!isAdding && !isEditing && (
         <>
-          <Header
-            setIsAdding = {setIsAdding}
-          />
+          <Header setIsAdding={setIsAdding} />
           <List
-          employees = {setEmployees}
+            employees={setEmployees}
+            handleEdit={handleEdit}
+            handleDelete={handleDelete}
           />
         </>
       )}
@@ -30,4 +35,3 @@ function Dashboard() {
 }
 
 export default Dashboard;
-

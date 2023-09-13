@@ -1,9 +1,23 @@
-import React from 'react'
+import React from "react";
+import employeesData from "../../data";
 
-function Edit() {
-  return (
-    <div>Edit</div>
-  )
+type EmployeesData = typeof employeesData;
+type FunctionType = React.Dispatch<React.SetStateAction<Function>>;
+
+interface editProps {
+  employees: EmployeesData;
+  selectedEmployee: null | EmployeesData;
+  setEmployee: React.Dispatch<React.SetStateAction<typeof employeesData>>;
+  setIsEditing: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export default Edit
+function Edit({
+  employees,
+  selectedEmployee,
+  setEmployee,
+  setIsEditing,
+}: editProps) {
+  return <div>Edit</div>;
+}
+
+export default Edit;

@@ -4,7 +4,7 @@ const employeesData = [
     firstName: "Avijit",
     lastName: "Roy",
     email: "roy@gmail.com",
-    salary: "45000",
+    salary: 45000,
     date: "2020-12-17",
   },
   {
@@ -12,7 +12,7 @@ const employeesData = [
     firstName: "John",
     lastName: "Doe",
     email: "john.doe@example.com",
-    salary: "50000",
+    salary: 50000,
     date: "2021-01-05",
   },
   {
@@ -20,7 +20,7 @@ const employeesData = [
     firstName: "Alice",
     lastName: "Smith",
     email: "alice.smith@example.com",
-    salary: "48000",
+    salary: 48000,
     date: "2021-02-14",
   },
   {
@@ -28,7 +28,7 @@ const employeesData = [
     firstName: "Bob",
     lastName: "Johnson",
     email: "bob.johnson@example.com",
-    salary: "52000",
+    salary: 52000,
     date: "2021-03-20",
   },
   {
@@ -36,7 +36,7 @@ const employeesData = [
     firstName: "Eva",
     lastName: "Brown",
     email: "eva.brown@example.com",
-    salary: "46000",
+    salary: 46000,
     date: "2021-04-12",
   },
   {
@@ -44,7 +44,7 @@ const employeesData = [
     firstName: "Michael",
     lastName: "Davis",
     email: "michael.davis@example.com",
-    salary: "49000",
+    salary: 49000,
     date: "2021-05-28",
   },
   {
@@ -52,7 +52,7 @@ const employeesData = [
     firstName: "Sara",
     lastName: "Johnson",
     email: "sara.johnson@example.com",
-    salary: "53000",
+    salary: 53000,
     date: "2021-06-15",
   },
   {
@@ -60,7 +60,7 @@ const employeesData = [
     firstName: "David",
     lastName: "Lee",
     email: "david.lee@example.com",
-    salary: "47000",
+    salary: 47000,
     date: "2021-07-09",
   },
   {
@@ -68,7 +68,7 @@ const employeesData = [
     firstName: "Emily",
     lastName: "Wilson",
     email: "emily.wilson@example.com",
-    salary: "51000",
+    salary: 51000,
     date: "2021-08-23",
   },
   {
@@ -76,7 +76,7 @@ const employeesData = [
     firstName: "James",
     lastName: "White",
     email: "james.white@example.com",
-    salary: "49000",
+    salary: 49000,
     date: "2021-09-05",
   },
 ];

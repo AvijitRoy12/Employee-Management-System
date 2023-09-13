@@ -24,18 +24,27 @@ function Dashboard() {
         <>
           <Header setIsAdding={setIsAdding} />
           <List
-            employees={setEmployees}
+            employees={employees}
             handleEdit={handleEdit}
             handleDelete={handleDelete}
           />
         </>
       )}
-      {/** Employee Add view */}
+      {/** Employee adding view */}
       {isAdding && (
         <Add
           employees={employees}
           setEmployees={setEmployees}
           setIsAdding={setIsAdding}
+        />
+      )}
+      {/** Employee editing view */}
+      {isEditing &&(
+        <Edit
+            employees={employees}
+            selectedEmployee={selectedEmployee}
+            setEmployee={setEmployees}
+            setIsEditing={setIsEditing}
         />
       )}
     </div>

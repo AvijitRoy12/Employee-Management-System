@@ -35,10 +35,42 @@ function Add({ setEmployees, setIsAdding, employees }: addProps) {
         <label htmlFor="firstName">First Name</label>
         <input
           type="text"
-          id="firstNmae"
+          id="firstName"
           name="firstName"
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
+        />
+        <label htmlFor="lastName">First Name</label>
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
+        />
+        <label htmlFor="lastName">Email</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <label htmlFor="salary">Salary</label>
+        <input
+          type="text"
+          id="salary"
+          name="salary"
+          value={salary}
+          onChange={(e) => setSalary(e.target.value)}
+        />
+        <label htmlFor="salary">Date</label>
+        <input
+          type="date"
+          id="date"
+          name="date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
         />
       </form>
     </div>

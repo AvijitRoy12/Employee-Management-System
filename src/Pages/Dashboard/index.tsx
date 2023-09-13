@@ -14,8 +14,12 @@ function Dashboard() {
   const [isAdding, setIsAdding] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
 
-  const handleEdit = () => {};
-  const handleDelete = () => {};
+  const handleEdit = (id: number) => {
+    console.log("Edit id", id);
+  };
+  const handleDelete = (id: number) => {
+    console.log("Delete id", id);
+  };
 
   return (
     <div className="container">
@@ -39,12 +43,12 @@ function Dashboard() {
         />
       )}
       {/** Employee editing view */}
-      {isEditing &&(
+      {isEditing && (
         <Edit
-            employees={employees}
-            selectedEmployee={selectedEmployee}
-            setEmployee={setEmployees}
-            setIsEditing={setIsEditing}
+          employees={employees}
+          selectedEmployee={selectedEmployee}
+          setEmployee={setEmployees}
+          setIsEditing={setIsEditing}
         />
       )}
     </div>

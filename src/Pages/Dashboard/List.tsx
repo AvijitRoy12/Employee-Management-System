@@ -15,8 +15,8 @@ interface ListProps {
     salary: number;
     date: string;
   }[];
-  handleEdit?: functionType;
-  handleDelete?: functionType;
+  handleEdit?: (id: number) => void;
+  handleDelete?: (id: number) => void;
 }
 
 function List({ employees, handleEdit, handleDelete }: ListProps) {
@@ -51,6 +51,20 @@ function List({ employees, handleEdit, handleDelete }: ListProps) {
                 <td>{employee.email}</td>
                 <td>{formatter.format(employee.salary)}</td>
                 <td>{employee.date}</td>
+                <td className="tex-right">
+                  {handleEdit && (
+                    <button onClick={() => handleEdit(employee.id)}>
+                      Edit
+                    </button>
+                  )}
+                </td>
+                <td className="tex-right">
+                  {handleDelete && (
+                    <button onClick={() => handleDelete(employee.id)}>
+                      Delete
+                    </button>
+                  )}
+                </td>
               </tr>
             ))
           ) : (

@@ -18,6 +18,9 @@ function Add({ setEmployees, setIsAdding, employees }: addProps) {
 
   const textInput = useRef<HTMLInputElement | null>(null);
 
+  /**
+   * This triggers for focus on the text field.
+   */
   useEffect(() => {
     if (textInput.current) {
       textInput.current.focus();
@@ -72,6 +75,7 @@ function Add({ setEmployees, setIsAdding, employees }: addProps) {
           value={date}
           onChange={(e) => setDate(e.target.value)}
         />
+        <button>Add</button>
       </form>
     </div>
   );

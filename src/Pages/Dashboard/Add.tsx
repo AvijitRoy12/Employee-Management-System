@@ -19,7 +19,7 @@ function Add({ setEmployees, setIsAdding, employees }: addProps) {
   const textInput = useRef<HTMLInputElement | null>(null);
 
   /**
-   * This triggers for focus on the text field.
+   * This effect will run only once after the component is mounted.
    */
   useEffect(() => {
     if (textInput.current) {

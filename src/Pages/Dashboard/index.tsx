@@ -8,6 +8,9 @@ import List from "./List";
 import Edit from "./Edit";
 import Header from "./Header";
 
+/**
+ * Dashboard component
+ */
 function Dashboard() {
   const [employees, setEmployees] = useState(employeesData);
   const [selectedEmployee, setSelectedEmployee] = useState(null);
